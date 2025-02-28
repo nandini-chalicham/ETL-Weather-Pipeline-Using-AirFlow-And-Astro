@@ -30,35 +30,22 @@ Deploy Your Project Locally
 ===========================
 
 To start Airflow on your local machine, simply run:
-
-astro dev start
-
+**astro dev start**
 This will spin up four Docker containers:
-
 Postgres – Stores Airflow’s metadata
-
 Webserver – Hosts the Airflow UI
-
 Scheduler – Monitors and triggers tasks
-
 Triggerer – Handles deferred tasks
 
 You can verify that everything is running by checking your active Docker containers:
-
 docker ps
 
 Accessing the Airflow UI
-
-Once everything is running, open your browser and go to:
-
-http://localhost:8080/
+Once everything is running, open your browser and go to: http://localhost:8080/
 
 Log in with:
-
 Username: admin
-
 Password: admin
 
 Connecting to the Postgres Database
-
 If needed, you can access the Postgres database at: localhost:5432/postgres
